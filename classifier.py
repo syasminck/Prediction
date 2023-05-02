@@ -29,7 +29,7 @@ naivebayes.fit(X_transformed, y_train)
 
 import streamlit as st
 
-st.header('Machine Prediction Demo')
+st.header('News Predictor')
 input = st.text_area("Please enter the text", value="")
 if st.button("Predict"):
   vec = vector.transform([input]).toarray()
